@@ -13,8 +13,6 @@ const Chat = ({user}) => {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    // this useEffect will fetch all users available for chat
-    // only run on mount
     let usersRequest = new CometChat.UsersRequestBuilder()
       .setLimit(limit)
       .build();
